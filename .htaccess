@@ -1,0 +1,8 @@
+<ifModule mod_rewrite.c>
+Options  +FollowSymlinks
+RewriteEngine On
+RewriteRule   ^([^/]+)$ view/$1.php [L]
+RewriteRule   ^$ index [L]
+</ifModule>
+
+#pour la redirection mettre a la racine 
